@@ -146,7 +146,7 @@ function assignAPIValues(weatherData) {
     weatherData.main.feels_like
   )}°c`;
   console.log(weatherData);
-  weatherDescription.src = `/weather-imgs/${weatherData.weather[0].main}.png`;
+  weatherDescription.src = `weather-imgs/${weatherData.weather[0].main}.png`;
 
   temperature.textContent = `${convertToCelsius(weatherData.main.temp)}°c`;
   region.textContent = weatherData.name;
