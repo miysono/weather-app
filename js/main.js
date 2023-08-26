@@ -145,7 +145,7 @@ function assignAPIValues(weatherData) {
   feelsLikeTemperature.textContent = `Feels like ${Math.round(
     weatherData.main.feels_like
   )}°c`;
-  weatherDescription.src = `./weather-imgs/${weatherData.weather[0].main}.png`;
+  weatherDescription.src = `weather-imgs/${weatherData.weather[0].main}.png`;
 
   temperature.textContent = `${convertToCelsius(weatherData.main.temp)}°c`;
   region.textContent = weatherData.name;
