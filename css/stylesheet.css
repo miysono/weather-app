@@ -1,8 +1,20 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Monsterrat", sans-serif;
+/*//////////////////////////////////*/
+/*MEDIA*/
+@media only screen and (max-width: 600px) {
 }
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
 /*//////////////////////////////////*/
 /*VARIBALES*/
 :root {
@@ -37,6 +49,12 @@
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Monsterrat", sans-serif;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
@@ -55,16 +73,9 @@ body {
   background-size: 200% 200%;
 }
 
-.result-loading {
-  height: 550px;
-}
-
 /*//////////////////////////////////*/
 /*MAIN CONTAINER*/
 .weather-container {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   border-radius: 2rem;
   width: 400px;
   border-style: solid;
@@ -75,7 +86,7 @@ body {
     linear-gradient(127deg, var(--light-purple), rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(336deg, var(--dark-blue), rgba(255, 0, 0, 0) 70.71%);
   animation: gradient 10s ease infinite;
-  background-size: 160% 140%;
+  background-size: 120% 120%;
 }
 
 .weather-container-wrapper {
@@ -166,6 +177,7 @@ body {
   width: 30%;
 }
 
+/*//////////////////////////////////*/
 /*FOOTER*/
 .weather-container-footer {
   padding: 2rem;
@@ -192,9 +204,9 @@ body {
   padding: 1rem;
 }
 
+/*//////////////////////////////////*/
 /*EXTRA*/
 .loader {
-  margin: auto;
   border: 10px solid var(--light-purple);
   border-top: 10px solid var(--blue);
   border-bottom: 10px solid var(--blue);
@@ -204,6 +216,13 @@ body {
   animation: spin 2s linear infinite;
 }
 
+.loader-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .hidden {
-  display: none;
+  opacity: 0;
 }
